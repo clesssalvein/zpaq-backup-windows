@@ -7,7 +7,7 @@ Website: http://mattmahoney.net/dc/zpaq.html
 This system is intended for incremental archiving and long-term storage of archives of directories (databases) and verification of created archives in Windows OS.
 
 The system includes:
-- Directory with zpaq application
+- Directory with "zpaq" application
 - Main script "zpaq-backup.cmd"
 - File containing a list of databases "dbsList.txt"
 - Dynamically created directories:
