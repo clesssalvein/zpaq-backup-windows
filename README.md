@@ -4,7 +4,7 @@ ZPAQ is an open source command line archiver for Windows and Linux. It uses a jo
 Website: http://mattmahoney.net/dc/zpaq.html
 
 # Description
-This system is intended for incremental archiving and long-term storage of archives of directories (databases) and verification of created archives.
+This system is intended for incremental archiving and long-term storage of archives of directories (databases) and verification of created archives in Windows OS.
 
 The system includes:
 - Directory with zpaq application
@@ -16,7 +16,7 @@ The system includes:
   - dbs_log for logging and backup status
 
 # Installation
-- On the server where the backup system will be used:
+- On the server (Windows OS) where the backup system will be used:
   - Fill in the list of directories (bases) for backup (absolute paths are required) in the dbsList.txt file. Example:
     ```
     d:\tmp\dbs\db01
