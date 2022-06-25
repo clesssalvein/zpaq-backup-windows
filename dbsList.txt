@@ -1,4 +1,4 @@
-d:\tmp\dbs\Стругацкие (.fb2)
-d:\tmp\dbs\Романы
-d:\tmp\dbs\Ray_Brudbury_Fahrenheit_451
-d:\tmp\dbs\TEST
+d:\dbs\Book(.fb2)
+d:\dbs\╨в╨╡╤Б╤В1
+d:\dbs\Ray_Brudbury_Fahrenheit_451
+d:\dbs\TEST02
