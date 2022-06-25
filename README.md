@@ -1,5 +1,10 @@
+# About
+ZPAQ is an open source command line archiver for Windows and Linux. It uses a journaling or append-only format which can be rolled back to an earlier state to retrieve older versions of files and directories (https://en.wikipedia.org/wiki/ZPAQ).
+
+Website: http://mattmahoney.net/dc/zpaq.html
+
 # Description
-The system is intended for incremental archiving and long-term storage of archives of directories (databases) and verification of created archives.
+This system is intended for incremental archiving and long-term storage of archives of directories (databases) and verification of created archives.
 
 The system includes:
 - Directory with zpaq application
