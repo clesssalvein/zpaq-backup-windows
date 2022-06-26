@@ -4,16 +4,16 @@ ZPAQ is an open source command line archiver for Windows and Linux. It uses a jo
 Website: http://mattmahoney.net/dc/zpaq.html
 
 # Description
-This system is intended for incremental archiving and long-term storage of archives of directories (databases) and verification of created archives in Windows OS.
+This system is intended for incremental archiving and long-term storage of archives (databases) and verification of created archives in Windows OS.
 
 The system includes:
 - Directory with "zpaq" application
 - Main script "zpaq-backup.cmd"
 - File containing a list of databases "dbsList.txt"
 - Dynamically created directories:
-  - dbs_backup to store created archives
-  - dbs_extracted_for_check to extract and check generated archives
-  - dbs_log for logging and backup status
+  - "dbs_backup" - to store created archives
+  - "dbs_extracted_for_check" to extract and check generated archives
+  - "dbs_log" for logging and backup status
 
 # Installation
 - On the server (Windows OS) where the backup system will be used:
@@ -23,13 +23,13 @@ The system includes:
     d:\tmp\dbs\db02
     d:\tmp\dbs\db03
     ```
-  - Change the paths to directories, files and utilities in the paths section of the backup-zpaq.cmd file
-  - Run backup-zpaq.cmd
+  - Change the paths directories, files and utilities in the "paths" section of the "zpaq-backup.cmd" file
+  - Run "zpaq-backup.cmd"
 
 # Work algorithm
-- The zpaq-backup.cmd script gets a list of directories (bases) from the "dbsList.txt" file
+- The zpaq-backup.cmd script gets a list of directories (bases) from file "dbsList.txt"
 - Actions are performed for each directory:
-  - File "checkMarker.txt" is written to the directory, containing the current date in format **YYYY-mm-dd**
+  - File "checkMarker.txt" containing the current date in format **YYYY-mm-dd** is written to the directory
   - Directory is archived along the path dbs_backup\\!dbName!\ with the archive name !dbName!_???.zpaq, where ??? - sequence number of the archive (001 - full archive, the following ones are incremental)
   - Upon completion of the archiving, the status of the operation is written to the dbArchStatus variable (**-ARCH_OK-** | **-ARCH_FAIL-**)
   - The file checkMarker.txt is removed from the directory
